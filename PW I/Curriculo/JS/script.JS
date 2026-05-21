@@ -1,22 +1,23 @@
+// const botao = document.getElementById("tema");
+
+
+// if(localStorage.getItem("tema")==="dark"){
+//     document.body.classList.add("dark");
+// }
+
+
+// botao.addEventListener("click",()=>{
+//     document.body.classList.toggle("dark");
+
+//     if(document.body.classList.contains("dark")){
+//         localStorage.setItem("tema","dark");
+//     }else{
+//         localStorage.setItem("tema","light");
+// }
+
 const botao = document.getElementById("tema");
 
-
-if(localStorage.getItem("tema")==="dark"){
-    document.body.classList.add("dark");
-}
-
-
-botao.addEventListener("click",()=>{
-    document.body.classList.toggle("dark");
-
-    if(document.body.classList.contains("dark")){
-        localStorage.setItem("tema","dark");
-    }else{
-        localStorage.setItem("tema","light");
-}
-const botao= document.getElementById("tema");
-});
-const botao = updateButtonIcon = () => {
+const updateButtonIcon = () => {
   if (!botao) return;
   const darkMode= document.body.classList.contains("dark");
   botao.textContent= darkMode? "☀️" :  "🌑";
@@ -40,9 +41,7 @@ if(document.body.classList.contains("dark")){
     localStorage.setItem("tema","light");
 }
 
-updateButtonIcon(;)
+updateButtonIcon()
 
-}
-
-    
+    });
 }

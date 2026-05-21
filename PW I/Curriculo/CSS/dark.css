@@ -7,7 +7,7 @@
     --cor-branco:#fff;
     --cor-borda:#cecece;
     --cor-sombra:#ccc;
-    --bg-image:url('../imagem/imagem1.avif')
+    --bg-image:url('../imagens/imagem1.avif');
     --overlay-opacity: 0.7;
 }
 
@@ -24,8 +24,7 @@
 *{
     transition:all 0.5s ease
 }
- .dark html,
- .dark body{
+body.dark{
     background:
     linear-gradient(
         rgba(0,0,0,var(--overlay-opacity)),
@@ -33,8 +32,13 @@
     ),
     var(--bg-image) no-repeat center center fixed;
 
-    background: cover;
-
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+ }
+ body.dak html{
+    background: transparent;
+    height: 100%;
  }
 header{
     background: var(--cor-header);
