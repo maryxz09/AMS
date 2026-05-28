@@ -31,7 +31,6 @@ body.dark{
         rgba(0,0,0, var(--overlay-opacity))
     ),
     var(--bg-image) no-repeat center center fixed;
-
     background-size: cover;
     min-height: 100vh;
     height: auto;
