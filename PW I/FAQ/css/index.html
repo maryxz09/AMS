@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>FAQ - linguagens de programação</title>
+</head>
+<body>
+    <a id="topo"></a>
+    <header id="topo">
+        <div class="container-menu">
+            <h1>Linguagens de Programação</h1>
+            <nav>
+                <a href="#javascript">JavaScript</a>
+                <a href="#python">Python</a>
+                <a href="#typescript">Typescript</a>
+                <a href="#java">Java</a>
+                <a href="#c#">C#</a>
+                <a href="#c++">C++</a>
+                <a href="#php">PHP</a>
+                <a href="#go">GO</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="javascript" class="card">
+            <h2>JavaScript</h2>
+            <div class="faq">
+                <h3>O que é JavaScript e qual é sua principal função no desenvolvimento web?</h3>
+                <p>O JavaScript é uma linguagem de programação de alto nível usada para criar, controlar e alterar o comportamento dinâmico de elementos em uma página web.
+                     Ele permite a implementação de recursos complexos e interativos, transformando sites estáticos em aplicações dinamicas.</p>
+            <div class="faq">
+                <h3>Qual a diferença entre let, const e var para declarar variáveis?</h3>
+                <p>const: Possui escopo de bloco e não permite reatribuição (o valor não pode ser alterado após ser declarado). É o padrão recomendado para quase todas as variáveis.
+                    let: Possui escopo de bloco, mas permite reatribuição. Usado quando você sabe que o valor da variável precisará mudar no futuro.
+                    var: É a forma mais antiga e problemática. Possui escopo de função/global e permite reatribuições e redeclarações. Hoje em dia, o uso de var não é recomendado</p>
+            </div>
+            <div class="faq">
+                <h3>Qual é a diferença entre == e ===?</h3>
+                <p>== (Igualdade Ampla): Avalia se dois valores são iguais. Se forem de tipos diferentes, a linguagem tenta converter um deles para o mesmo tipo antes de comparar (ex: 1 == "1" true).
+                    === (Igualdade Estrita): Avalia se os valores são idênticos e se pertencem ao mesmo tipo de dado. Se os tipos forem diferentes, o resultado é sempre falso (ex: 1 === "1" é false).</p>
+            </div>
+            <div class="faq">
+                <h3>O que são closures e para que elas servem?</h3>
+                <p>Uma closure (ou fechamento) é a capacidade de uma função lembrar e acessar variáveis do seu escopo externo, mesmo que essa função externa já tenha terminado de ser executada. Em essência, a função "embrulha" a si mesma e ao seu ambiente léxico.</p>
+            </div>
+            <div class="faq">
+                <h3>O que é o event loop e como ele funciona no JavaScript?</h3>
+                <p>O Event Loop (ou Loop de Eventos) é o mecanismo central que permite ao JavaScript realizar operações assíncronas e não bloqueantes, mesmo sendo uma linguagem de thread única (single-thread), o que significa que ela executa uma única instrução por vez.</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+
+         <section id="python" class="card">
+            <h2>Python</h2>
+            <div class="faq">
+                <h3>O que é Python e quais são suas principais vantagens?</h3>
+                <p>Python é uma linguagem de programação de alto nível, interpretada e de propósito geral.
+                   Criada para priorizar a legibilidade e a simplicidade, ela permite que desenvolvedores escrevam sistemas complexos utilizando menos linhas de código do que em linguagens tradicionais.</p>
+            </div>
+            <div class="faq">
+                <h3>Como funciona o gerenciamento de memória em Python?</h3>
+                <p>O gerenciamento de memória em Python é automático. Ele cuoca da alocação de espaço para objetos e da sua liberação quando não são mais necessários, utilizando principalmente dois mecanismos: Contagem de Referências e Coleta de Lixo</p>
+            </div>
+            <div class="faq">
+                <h3>O que são classes e objetos em Python?</h3>
+                <p>Em Python, classes são moldes ou plantas estruturais usados para criar objetos. Uma classe define as características (atributos) e os comportamentos (métodos) que os objetos terão. Um objeto é uma instância específica desse molde, contendo dados reais e podendo executar as ações definidas.</p>
+            </div>
+            <div class="faq">
+                <h3>O que são herança e polimorfismo?</h3>
+                <p>1. Herança O que é: Cria uma hierarquia onde uma nova classe é baseada em uma classe já existente. A classe filha ganha todos os atributos e métodos da classe pai, evitando repetição de código.
+                    Exemplo prático: Imagine que você tem uma classe base chamada Animal com a ação emitirSom(). A partir dela, você pode criar as classes filhas Cachorro e Gato. Ambas herdam a estrutura básica de um Animal, mas têm suas próprias características adicionais.
+                   2.polimorfismo O que é: Do grego "muitas formas", é a capacidade de chamar o mesmo método em objetos diferentes e obter comportamentos específicos para cada um deles.
+                    Exemplo prático: Seguindo o exemplo acima, se você mandar os objetos Cachorro e Gato executarem o método emitirSom(), o cachorro vai "latir" e o gato vai "miar". O programa sabe exatamente qual comportamento executar dependendo do objeto que foi chamado, utilizando o mesmo nome de método.</p>
+            </div>
+            <div class="faq">
+                <h3>Quais são os frameworks mais populares para Python?</h3>
+                <p> Os maiores destaques dividem-se principalmente entre desenvolvimento web, ciência de dados e, mais recentemente, inteligência artificial
+                    Desenvolvimento Web e APIsDjango: É o mais famoso framework full-stack. Possui a filosofia "baterias inclusas", vindo com banco de dados, sistema de autenticação e painel administrativo prontos. É ideal para projetos robustos.
+                    Ciência de Dados e VisualizaçãoStreamlit: Permite criar aplicações web interativas voltadas para Machine Learning e Data Science usando pouquíssimas linhas de código.
+                    Inteligência Artificial e AgentesLangChain: O framework mais popular para orquestrar e construir aplicações alimentadas por Grandes Modelos de Linguagem (LLMs), como a integração de chatbots com fontes de dados externas. </p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+
+         <section id="typescript" class="card">
+            <h2>TypeScript</h2>
+            <div class="faq">
+                <h3>O que é TypeScript e quais são as principais vantagens de utilizá-lo em comparação ao JavaScript?</h3>
+                <p>O TypeScript é um superconjunto de código aberto do JavaScript desenvolvido pela Microsoft. Ele adiciona tipagem estática opcional e recursos avançados de Orientação a Objetos à linguagem. Todo código JavaScript válido também é válido no TypeScript, que é convertido para JavaScript puro antes de rodar no navegador.</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre os tipos any, unknown e never em TypeScript? Dê um exemplo de uso para cada um deles.</h3>
+                <p>any- é uma válvula de escape onde qualquer valor é aceito e qualquer operação é permitida. O TypeScript desliga completamente a checagem de tipos para essa variável. Seu uso excessivo é desencorajado, pois pode esconder erros em tempo de execução.
+                  unknown- é a alternativa segura ao any. Você pode atribuir qualquer valor a ele, mas o TypeScript não permite que você execute operações (como chamar métodos ou acessar propriedades) sem antes verificar ou estreitar (narrowing) o tipo.
+                  never- representa um tipo que nunca ocorre. É usado tipicamente como tipo de retorno para funções que disparam erros (lançam exceções) ou que possuem loops infinitos. Também é usado para verificar exaustividade em checagens de estados (switch/case) </p>
+            </div>
+            <div class="faq">
+                <h3>Explique a diferença entre interface e type em TypeScript. Em quais situações cada um é mais indicado?</h3>
+                <p>Em TypeScript, tanto interface quanto type servem para definir a estrutura de dados e tipar objetos. A principal diferença é que type é um alias (apelido) flexível capaz de representar qualquer tipo primitivo ou complexo, enquanto interface é focada em moldar objetos e permite a extensão de classes.</p>
+            </div>
+            <div class="faq">
+                <h3>O que são Decorators em TypeScript e para que eles podem ser utilizados?</h3>
+                <p>Decorators em TypeScript são funções especiais que permitem modificar, anotar ou estender o comportamento de classes, métodos, propriedades ou parâmetros em tempo de design. Eles são identificados pelo caractere de arroba (@) seguido do nome da função.</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre os modificadores de acesso public, private e protected em classes TypeScript?.</h3>
+                <p>public: Acessível de qualquer lugar (dentro e fora da classe). É o padrão.
+                   protected: Acessível apenas dentro da própria classe e suas subclasses (classes filhas).
+                   private: Acessível estritamente dentro da classe onde foi declarad</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+
+        <section id="java" class="card">
+            <h2>Java</h2> 
+            <div class="faq">
+                <h3>O que é a JVM (Java Virtual Machine) e qual é o seu papel na execução de programas Java?</h3>
+                <p>A JVM (Java Virtual Machine) é o componente central da tecnologia Java responsável por executar os programas. Ela atua como um "tradutor universal", convertendo instruções genéricas (bytecode) em código de máquina específico para o sistema operacional rodar a aplicação</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre uma classe e um objeto em Java?</h3>
+                <p>Classe -É apenas um conceito ou molde. Ela não ocupa espaço na memória do computador.Define quais serão os atributos (as características, ex: cor, ano) e os métodos (os comportamentos, ex: acelerar, frear) que os objetos terão.
+                    Exemplo: A classe Carro
+                    ObjetoÉ o resultado da "construção" baseada na classe. Ocupa espaço na memória e possui valores reais (estado).Você pode criar múltiplos objetos a partir de uma única classe, cada um com seus próprios dados.
+                    Exemplo: Um objeto meuCarro (cor: vermelho, ano: 2026) e outro objeto carroDoAmigo (cor: azul, ano: 2024).</p>
+            </div>
+            <div class="faq">
+                <h3>Explique os conceitos de herança, encapsulamento, polimorfismo e abstração na programação orientada a objetos em Java.</h3>
+                <p>A herança - permite que uma classe (chamada de subclasse ou classe filha) herde atributos e métodos de outra classe (chamada de superclasse ou classe pai). Isso promove a reutilização de código e evita repetições.
+                   O encapsulamento - é a prática de esconder os detalhes internos do funcionamento de uma classe e proteger seus dados contra acessos indevidos. Em vez de deixar atributos expostos, nós os tornamos privados e fornecemos métodos públicos (getters e setters) para acessá-los e modificá-los de forma controlada.
+                   O polimorfismo - (do grego, "muitas formas") permite que um método com o mesmo nome se comporte de maneiras diferentes dependendo do objeto que o está chamando. Isso traz muita flexibilidade ao código.
+                   A abstração - é o processo de focar apenas nos atributos e comportamentos essenciais de um objeto para o seu contexto, ocultando os detalhes complexos ou irrelevantes. Em Java, ela é implementada usando classes abstratas ou interfaces.</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre os tipos primitivos (int, double, boolean, etc.)</h3>
+                <p>Inteiros - (int, byte, short, long): Armazenam números inteiros (positivos ou negativos). A diferença é a capacidade de armazenamento. O int, por exemplo, ocupa 4 bytes, enquanto o long armazena números muito maiores em 8 bytes.
+                   Decimais / Ponto Flutuante - (double, float): Armazenam números com casas decimais. O float ocupa 4 bytes de memória e possui precisão simples, enquanto o double ocupa 8 bytes e é a escolha ideal para alta precisão matemática.
+                   Lógico (boolean): Armazena apenas dois estados: true (verdadeiro) ou false (falso). É usado para tomada de decisões e controle de fluxo (ex: se uma condição for verdadeira, faça algo).
+                   Caractere (char): Armazena um único caractere (uma letra, número ou símbolo), como por exemplo 'A' ou '$'. Na maioria das linguagens, ele utiliza a tabela Unicode e ocupa 2 bytes. </p>
+            </div>
+            <div class="faq">
+                <h3>O que é o tratamento de exceções em Java? Explique a diferença entre exceções verificadas (checked) e não verificadas (unchecked).</h3>
+                <p> Exceções Verificadas - (Checked Exceptions)São erros fora do controle direto do seu programa (geralmente ligados a I/O ou redes), que o compilador do Java obriga você a tratar ou declarar. Se não usar um bloco try-catch ou propagar a exceção com a cláusula throws, o código não compila.
+                    Exceções Não Verificadas (Unchecked Exceptions)Também conhecidas como exceções de tempo de execução (Runtime Exceptions), não são verificadas em tempo de compilação. O compilador não obriga o uso de try-catch, geralmente representando falhas na lógica de programação ou no uso inadequado de objetos.</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+
+        <section id="c#" class="card">
+            <h2>C#</h2>
+            <div class="faq">
+                <h3>Quais são as principais características da linguagem C e por que ela é considerada uma linguagem de baixo nível?</h3>
+                <p>A linguagem C é um marco na programação, servindo como base para a criação de sistemas operacionais e softwares de alto desempenho. Ela se destaca por sua portabilidade, eficiência e estrutura procedural, permitindo um controle direto sobre o hardware do computador.</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre uma variável local e uma variável global em C?</h3>
+                <p>A principal diferença entre elas é o escopo (onde podem ser acessadas) e o tempo de vida (por quanto tempo ficam salvas na memória)
+                    Variáveis Globais
+                    Onde são declaradas: Fora de qualquer função (geralmente no topo do arquivo).
+                    Acesso: Podem ser acessadas e modificadas de qualquer função dentro do programa.
+                    Tempo de vida: São criadas quando o programa inicia e destruídas apenas quando o programa é encerrado.
+                    Inicialização: São inicializadas automaticamente com zero caso você não defina um valor inicial.
+
+                    Variáveis Locai 
+                    Onde são declaradas: Dentro de uma função específica ou em um bloco de código delimitado por chaves { }.
+                    Acesso: Só podem ser usadas dentro da própria função ou bloco onde foram declaradas.
+                    Tempo de vida: São criadas quando a execução entra na função e destruídas imediatamente assim que a função termina.
+                    Inicialização: Não são inicializadas automaticamente. Se você não atribuir um valor, ela começará com um "lixo" (valor aleatório) que estava na memória.</p>
+            </div>
+            <div class="faq">
+                <h3>O que são ponteiros e como eles funcionam na linguagem C?</h3>
+                <p>Ponteiros são variáveis especiais na linguagem C que não armazenam um valor direto, mas sim o endereço de memória onde um valor está guardado. Pense neles como o endereço de uma casa: em vez de carregar a casa inteira com você, você apenas anota onde ela fica para poder visitá-la quando precisar.</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre os comandos de repetição for, while e do-while na linguagem C?</h3>
+                <p>for (Para)Como funciona: Agrupa a inicialização, a condição e a atualização em uma única linha. É a melhor escolha quando você sabe de antemão o número exato de repetições.
+                   while (Enquanto)Como funciona: Avalia uma condição booleana e repete o bloco de código enquanto ela for verdadeira. É usado quando o número de repetições não é previsível e depende de variáveis ou eventos externos.
+                   do-while (Faça-Enquanto)Como funciona: Semelhante ao while, mas avalia a condição no final do bloco.</p>
+            </div>
+            <div class="faq">
+                <h3>O que é uma estrutura (struct) em C e em quais situações ela é utilizada?.</h3>
+                <p>Uma struct (ou estrutura) em C é um tipo de dado customizado que permite agrupar diferentes variáveis sob um mesmo nome, mesmo que tenham tipos de dados diferentes. Ela é ideal para organizar dados complexos e relacionados, facilitando a manipulação e o armazenamento na memória.</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+
+        <section id="c++" class="card">
+            <h2>C++</h2>
+            <div class="faq">
+                <h3>Quais são as principais diferenças entre C e C++?</h3>
+                <p>A principal diferença é que C é uma linguagem procedural (focada em funções e procedimentos), enquanto C++ é multiparadigma e orientada a objetos. O C++ foi criado como uma extensão do C, o que significa que quase todo código C válido também é compilado em C++, mas adiciona ferramentas de abstração mais robustas.</p>
+            </div>
+            <div class="faq">
+                <h3>O que é programação orientada a objetos (POO) e como ela é implementada em C++?</h3>
+                <p>A Programação Orientada a Objetos (POO) é um paradigma que organiza o código em torno de "objetos". Em C++, ela é implementada usando classes (que servem como moldes ou estruturas) e objetos (instâncias dessas classes), utilizando recursos de encapsulamento, herança e polimorfismo </p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre sobrecarga de funções (function overloading) e sobrescrita de métodos (method overriding) em C++?</h3>
+                <p>A sobrecarga (overloading) permite ter múltiplas funções com o mesmo nome, mas assinaturas diferentes (parâmetros distintos) no mesmo escopo. A sobrescrita (overriding) ocorre quando uma classe derivada redefine um método herdado da classe base, mantendo exatamente a mesma assinatura e tipo de retorno</p>
+            </div>
+            <div class="faq">
+                <h3>O que são ponteiros e referências em C++? .</h3>
+                <p>Ponteiros e referências em C++ são mecanismos que permitem manipular diretamente a memória, mas diferem fundamentalmente na sintaxe, flexibilidade e segurança</p>
+            <div class="faq">
+                <h3>O que é um construtor e um destrutor em C++?</h3>
+                <p>Construtor: Inicializa o objeto e define valores iniciais para seus atributos no momento em que ele é criado.
+                    Destrutor: Libera recursos (como memória dinâmica ou arquivos) quando o objeto é destruído ou sai de escopo.</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+        <section id="php" class="card">
+            <h2>PHP</h2>
+            <div class="faq">
+                <h3>O que é PHP e quais são suas principais aplicações no desenvolvimento web?</h3>
+                <p>PHP é uma linguagem de script de código aberto que roda no lado do servidor, projetada especificamente para o desenvolvimento web. Ela processa dados no servidor e gera páginas dinâmicas em HTML que são enviadas diretamente ao navegador do usuário</p>
+            </div>
+            <div class="faq">
+                <h3>Qual a diferença entre os métodos GET e POST para envio de dados em uma aplicação PHP?</h3>
+                <p>A principal diferença está em como os dados são transmitidos e processados pelo servidor: o GET envia os dados expostos na URL (ideal para buscas e links compartilháveis), enquanto o POST envia os dados dentro do corpo da requisição HTTP (ideal para formulários, cadastros e dados sigilosos).</p>
+            </div>
+            <div class="faq">
+                <h3>Como funciona a conexão entre PHP e um banco de dados, como o MySQL?</h3>
+                <p>A conexão entre o PHP e o MySQL funciona através de extensões nativas que criam uma ponte para o servidor de banco de dados. Utilizando credenciais de acesso, o script PHP abre um canal seguro para enviar comandos SQL, processar os dados retornados e gerenciar o fluxo da aplicação.</p>
+            </div>
+            <div class="faq">
+                <h3>O que são sessões (sessions) e cookies em PHP?</h3>
+                <p>Sessões (Sessions) e Cookies são recursos usados para armazenar informações e rastrear usuários entre diferentes páginas de um site. A principal diferença é que os cookies são armazenados no navegador do cliente (seu computador), enquanto os dados da sessão ficam guardados com segurança no servidor</p>
+            </div>
+            <div class="faq">
+                <h3>Como declarar e inicializar uma variável em PHP? Dê um exemplo.</h3>
+                <p>Os nomes de variáveis sempre começam com o caractere $ (cifrão). Exemplo: $idade ; São sensíveis à letra, ou seja, $Valor é diferente de $valor . Um nome de variável válido deve iniciar com um sublinhado OU uma letra, nunca deve ser iniciado com um número ou caractere especial.</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+        <section id="go" class="card">
+            <h2>GO</h2>
+            <div class="faq">
+                <h3>O que é a linguagem Go e quais são suas principais características?</h3>
+                <p>A linguagem Go (ou Golang) é uma linguagem de programação compilada e de código aberto criada pelo Google. Focada em alta performance e produtividade, ela foi projetada para construir sistemas altamente escaláveis de forma simples, eficiente e com fácil manutenção</p>
+            </div>
+            <div class="faq">
+                <h3>Como funciona a tipagem em Go? Ela é estática ou dinâmica?</h3>
+                <p>A tipagem em Go é estática e forte. Isso significa que o compilador verifica os tipos de dados em tempo de compilação e não permite conversões implícitas entre tipos incompatíveis (como tentar somar um número inteiro com uma string), garantindo maior segurança e desempenh</p>
+            <div class="faq">
+                <h3>O que são goroutines em Go e para que elas são utilizadas?</h3>
+                <p>Goroutines são threads de execução extremamente leves gerenciadas pelo ambiente de execução (runtime) da linguagem Go. Elas permitem rodar funções de forma concorrente e paralela de maneira muito eficiente, consumindo pouca memória inicial e escalando facilmente para milhares de instâncias simultâneas</p>
+            </div>
+            <div class="faq">
+                <h3>O que são interfaces na linguagem GO</h3>
+                <p>As interfaces em Go são contratos que definem um conjunto de métodos, sem implementar a lógica deles. Qualquer tipo de dado (como uma struct) que implemente esses métodos automaticamente satisfaz a interface. Em Go, essa implementação é implícita, ou seja, não é necessário declarar explicitamente que um tipo usa a interface</p>
+            </div>
+            <div class="faq">
+                <h3>Como funcionam os tipos básicos em Go?</h3>
+                <p>Os tipos básicos em Go são os blocos de construção da linguagem. Eles são estaticamente tipados e englobam booleanos, numéricos (inteiros e pontos flutuantes) e strings. A linguagem não realiza conversões implícitas; cada dado deve ser declarado e tratado com seu tipo exato.</p>
+            </div>
+            <a href="#topo" class="voltar"> ↑ voltar para o topo</a>
+        </section>
+    </main>
+</body>
+</html>
