@@ -50,15 +50,14 @@ h1{
     font-size: 10px;
     text-align: center;
 }
-.alcalino{background: #ff5a1f; }
-.alcalino-terroso{background: #f4e44d; }
-.transicao{background: #63c7d8;}
-.semimetal{background: #4ba3f2;}
-.nao-metal{background: #58c25f;}
-.halogenio{background: #ffab19;}
-.gas{background: #f3d34a;}
-.pos-transicao{background: #20b2aa;}
-.ametal-reativo{background: #6495ed;}
-.outros{background: #cfd4d9;}
-.lantanideos{background: #b987f0;}
-.actinideos{background: #f5a07c;}
+.alcalino{background: #d946ef; }
+.alcalino-terroso{background: #d8b4fe; }
+.transicao{background: #7dd3fc;}
+.semimetal{background: #2563eb;}
+.halogenio{background: #c026d3;}
+.gas{background: #6366f1;}
+.outros{background: #581c87;}
+.lantanideos{background: #a855f7;}
+.actinideos{background: #6366f1;}
+.pos-transicao{background: #c026d3;}
+.ametal-reativo{background: #a855f7;}
