@@ -61,3 +61,24 @@ h1{
 .actinideos{background: #6366f1;}
 .pos-transicao{background: #c026d3;}
 .ametal-reativo{background: #a855f7;}
+
+@media(max-width:1400px){
+    .tabela{
+        grid-template-columns: repeat(18,55px);
+    }
+    .elemento{
+        width: 55px;
+        height: 55px;
+    }
+    .simbolo{
+        font-size: 18px;
+    }
+}
+@media(max-width:1000px){
+    body{
+        overflow-x: auto;
+    }
+    .tabela{
+        width:max-content ;
+    }
+}
