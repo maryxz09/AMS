@@ -1,0 +1,15 @@
+.root{
+    /*cores principais*/
+
+    --cores-primaria:#380B61;
+    --cores-secundaria:#59429d;
+    --cor-hover:#CCBBFF;
+    --cor-fundo:#F0F8FF;
+    --cor-formulario:#E6E6FA;
+     --cor-focus:#e0e0f8;
+
+    /*Espaçamentos*/
+    --espacamentos-pequeno:0.5cm,
+     --espacamento-medio:1 cm;
+    --espacamento
+}
