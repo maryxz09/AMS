@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f4;
+  color: #2e3d32;
+}
+
+/* Barra de Navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d5a3f;
+}
+
+.nav-links a {
+  margin-left: 1.8rem;
+  text-decoration: none;
+  color: #4a5d4e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2d5a3f;
+}
+
+/* Área Principal (Hero) */
+.hero {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: #2d5a3f;
+}
+
+/* Ajusta a imagem da pasta img para cobrir todo o fundo */
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.65); /* Fica levemente escura para o texto branco aparecer */
+}
+
+/* Conteúdo centralizado */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão em Destaque */
+.btn-catalogo {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: #2d5a3f;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-catalogo:hover {
+  background-color: #1f3f2c;
+  transform: translateY(-2px);
+}
+
+
