@@ -7,6 +7,31 @@
     --cor-texto:#222;
     --cor-borda:#cecece;
     --cor-sombra:#fff;
-    
+    --bg-imagem:url('../imagens/clinica odonto.webp');
+    --overlay-opacity:0.7;
+
     --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-base:18px;
+    --line-base:28px;
+    --radius:5px;
+    --espaço--padrao:10px;
+
 }
+*{
+    margin:0;
+    padding:0;
+    font-family: var(--fonte-padrao);
+    font-size:var(--font-base);
+    line-height: var(--line-base);
+}
+
+html,body{
+    height: 100%;
+    background: 
+    linear-gradient(
+        rgba(255,255,255,var(--overlary-opacity))),
+        rgba(255,255,255,var(--overlary-opacity)),
+        var(--bg-image) no-repeat center center fixed;
+        background-size: cover;
+}
+
