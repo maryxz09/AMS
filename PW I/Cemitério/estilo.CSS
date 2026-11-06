@@ -1,5 +1,5 @@
 :root{
-    --copreste:#22372f; /* verde escuro*/
+    --cipreste:#22372f; /* verde escuro*/
     --ardosia:#3a4651;/*texto*/
     --musgo:#7e8f78;
     --pedra:#d9ded3;
@@ -123,10 +123,186 @@ content: "";
 position:absolute;inset:22% 50% auto auto;
 width:2px;height: 22%;
 background: var(--musgo);
-box-shadow: :0.55em 0 0 var (--musgo);
+box-shadow: 0.55em 0 0 var(--musgo);
 }
-.11 {grid-row:span 4/-1;}
-.12 {grid-row:span 6/-1;background:#c4c9bd;}
-.13 {grid-row:span 7/-1;}
-.14 {grid-row:span 5/-1;background:#c4c9bd;}
-.15 {grid-row:span 3/-1;}
+.l1 {grid-row: span 4 / -1;}
+.l2 {grid-row: span 6 / -1; background: #c4c9bd;}
+.l3 {grid-row: span 7 / -1;}
+.l4 {grid-row: span 5 / -1; background: #c4c9bd;}
+.l5 {grid-row: span 3 / -1;}
+/*Botôes*/
+.botão{
+display:inline-block;
+padding: .8rem 1.6rem;
+font:600 1 rem var(--sans);
+text-decoration:none;
+text-align: center;
+color:var(--cipreste);
+background:var(--cipreste);
+background: var(--pedra);
+border:0;
+border-radius:25rem;
+cursor:pointer;
+}
+.botao:hover {background: #fff;}
+
+/*-----------------------------------------------
+4)SREVIÇOS:grid responsivo SEM media query
+auto fit+minmax: o navegador decide quantas colunas cabem.
+-------------------------------------------------*/
+.serviço h2{margin-bottom: 2rem;}
+.cartoe{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(16, 1fr));
+gap:1.5rem;
+}
+.cartao{
+    padding:1.5rem;
+    background: #fff;
+    border-top: 4px solid var(--musgo);
+}
+.cartao h3 {margin-bottom:.5rem;}
+
+/*-------------------------------------------
+5)MAPA:grid-template-areas
+------------------------------------------*/
+.mapa {background: var(--pedra);}
+.mapa h2{margin-bottom: .5rem;}
+.mapa__intro {margin-bottom:2rem;}
+.mapa code   {background: rgba(255,255, 255,.6);padding:.1rem.35rem;border-radius:.2rem;}
+
+.planta{
+ display:grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows: repeat(4,minmax(5.5rem,1fr));
+ grid-template-areas:   
+ "entrada entrada alameda jardim"
+ "qa  qb    alameda jardim"
+ "qa  qb    capela capela"
+ "qe  qe    qd   memorial";
+ gap:.6rem;
+}
+.area{
+display:grid;
+place-items:center;    /*centraliza o texto na célula*/
+padding: .75rem;
+text-align: center;
+font-family: var(--serif);
+font-size: 1.05rem;
+color:var(--cipreste);
+background: var(--nevoa);
+border-radius: 25rem;
+}
+.entrada{grid-area:entrada;background:var(--cipreste);color:var(--nevoa);}
+.entrada{grid-area:alameda;background:var(---musgo);color:#fff;}
+.qa {grid-area:qa;}
+.qb {grid-area:qb;}
+.capela {grid-area:capela; background:var(--lavanda);color:#fff;}
+.qc {grid-area:qe;}
+.qd {grid-area:qd;}
+.memorial{grid-area:memorial;background: var(--ardosia);color:var(--nevoa);}
+
+/* No celular: redesenhamos a planta só trocando as áreas */
+@media (max-width: 40rem) {
+    .planta {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        grid-auto-rows: minmax(5rem, auto);
+        grid-template-areas:
+            "entrada entrada"
+            "alameda jardim"
+            "qa   qb"
+            "qe   qe"
+            "qd    memorial"
+    }
+}
+
+/* ----------------------------------------------
+   6) VISITA: colunas de proporção diferente (2fr | 1fr)
+   dl em grid de 2 colunas = tabela sem <table>
+   ---------------------------------------------- */
+.visita__grade {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+.horarios h2 { margin-bottom: 1.5rem; }
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0 2rem;
+}
+dt, dd { padding: .7rem 0; border-bottom: 1px solid var(--pedra); }
+dt { font-weight: 600; }
+
+.aviso {
+    padding: 1.5rem;
+    background: #fff;
+    border-left: 4px solid var(--lavanda);
+}
+.aviso h3 { margin-bottom: .75rem; }
+.aviso p + p { margin-top: .75rem; }
+
+@media (max-width: 52rem) {
+    .visita__grade { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ----------------------------------------------
+   7) FORMULÁRIO: 2 colunas, campos largos usam grid-column: 1 / -1
+   ---------------------------------------------- */
+.contato { background: #fff; }
+
+.contato h2 { margin-bottom: 1.5rem; }
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 40rem;
+}
+
+.formulario label { display: grid; gap: .35rem; font-weight: 600; font-size: .95rem; }
+
+.formulario .largo { grid-column: 1 / -1; } /* da primeira à última linha */
+
+input, textarea {
+    font: 400 1rem var(--sans);
+    padding: .7rem .8rem;
+    color: var(--ardosia);
+    border: 1px solid var(--musgo);
+    border-radius: .25rem;
+}
+
+.formulario .botao { background: var(--cipreste); color: var(--nevoa); }
+
+.formulario .botao:hover { background: var(--ardosia); }
+
+@media (max-width: 36rem) {
+    .formulario { grid-template-columns: 1fr; }
+}
+
+/* ----------------------------------------------
+   8) RODAPÉ: auto-fit de novo, com a coluna da marca mais larga
+   ---------------------------------------------- */
+.rodape { background: var(--cipreste); color: var(--pedra); padding-block: 3rem; }
+
+.rodape h3 { color: var(--nevoa); font-size: 1.05rem; margin-bottom: .5rem; }
+
+.rodape__colunas {
+    display: grid;
+    grid-template-columns: 2fr repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 2rem;
+    font-size: .95rem;
+}
+
+@media (max-width: 40rem) {
+    .rodape__colunas { grid-template-columns: 1fr 1fr; }
+    .rodape__colunas > :first-child { grid-column: 1 / -1; }
+}
+
+/* Respeita quem prefere menos animação (aqui não há, mas é boa prática) */
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
