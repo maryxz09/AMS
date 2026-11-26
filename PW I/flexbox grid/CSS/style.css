@@ -156,21 +156,23 @@ ul{list-style: none;}
 .prato-linha h3 {font-size:1.15rem;}
 .preco{font-weight: 600;color:var(--pimenta);white-space: nowrap;}
 
-.viste-grid{
-    display:grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 3 rem;
+.visite-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     align-items: start;
 }
-.horarios h3, .reserva h3 {font-size: 1.5rem; margin-bottom:1rem; color:var(--floresta);}
 
-.lista-horarios li{
+.horarios h3, .reserva h3{font-size: 1.5rem; margin-bottom: 1rem; color: var(--floresta);}
+
+.lista-horario li{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     padding: .7rem 0;
     border-bottom: 1px dashed #9db3a3;
 }
+
 .lista-horarios span:first-child{font-weight: 600;}
 .endereco{margin-top: 1.5rem;}
 
@@ -182,20 +184,22 @@ ul{list-style: none;}
     background: var(--salvia);
     border-radius: 1rem;
 }
-.reserva h3, .reserva .botao {grid-column: 1/ -1 ;}
-.reserva label {display: flex;flex-direction: column; gap: .3rem;font-weight: 600;}
-.reserva input{padding: .65rem; border:2px solid #b9cbbd; border-radius: .5rem; font:inherit;}
+
+.reserva h3, .reerva .botao{grid-column: 1 / -1;}
+.reserva label{ display: flex; flex-direction: column; gap: .3rem; font-weight: 600;}
+.reserva input{padding: .65rem; border: 2px solid #b9cbbd; border-radius: .5rem; font: inherit;}
 
 .rodape{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:.5rem;
-    padding: 1.5rem  5vw;
+    gap: .5rem;
+    padding: 1.5rem 5vw;
     background: var(--tinta);
-    color:var(--salvia);
+    color: var(--salvia);
     font-size: .9rem;
 }
+
 @media (max-width:900px){
     .hero, .visite-grid {grid-template-columns: 1fr;}
     .sobre-grid{grid-template-columns: 1fr;}
